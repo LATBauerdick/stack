@@ -23,6 +23,10 @@ Other enhancements:
 * `stack build` and related commands now allow the user to disable debug symbol stripping
   with new `--no-strip`, `--no-library-stripping`, and `--no-executable-shipping` flags,
   closing [#877](https://github.com/commercialhaskell/stack/issues/877).
+* Respects the `custom-setup` field introduced in Cabal 1.24. This
+  supercedes any `explicit-setup-deps` setings in your `stack.yaml`
+  and trusts the package's `.cabal` file to explicitly state all its
+  dependencies.
 
 Bug fixes:
 
